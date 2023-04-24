@@ -48,6 +48,7 @@ export default function SignupScreen() {
 
       if (response.status == 200) {
         let data = await response.json();
+     
         dispatch(loginUser(data));
 
         return true;

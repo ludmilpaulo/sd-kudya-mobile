@@ -4,10 +4,10 @@ import colors from "../configs/colors";
 
 export default function ({
   title,
-  onPress,
+  onPress ,
   color = "primary",
   disabled = false,
-}) {
+}: any) {
   return (
     <TouchableOpacity
       style={[styles.button, { backgroundColor: colors[color] }]}
